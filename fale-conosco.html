@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Fale Conosco - Cozinha Caseira da Lalá</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location='index.html'">
+      <img src="img/ChatGPT Image 11 de nov. de 2025, 12_51_41.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="delivery.html">Delivery</a>
+      <a href="quem-somos.html">Quem Somos</a>
+      <a href="fale-conosco.html">Fale Conosco</a>
+    </nav>
+  </header>
+
+  <!-- IGUAL AO DELIVERY: usa o mesmo main com class pagina_pedidos -->
+  <main class="pagina_pedidos">
+    <section class="container_fale">
+      <h1 class="titulo-form">Fale Conosco</h1>
+
+
+      <form id="contatoForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="4" required></textarea>
+
+        <label for="frequencia">Com que frequência você visita nosso restaurante?</label>
+        <select class="frequencia" id="frequencia" name="frequencia" required>
+          <option value="">Selecione</option>
+          <option>Primeira vez</option>
+          <option>2 a 3 vezes por mês</option>
+          <option>1 vez por semana</option>
+          <option>Mais de 1 vez por semana</option>
+        </select>
+
+        <label>Quantas estrelas você daria para o restaurante?</label>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5">
+          <label class="rating_label" for="star5" title="5 estrelas"></label>
+
+          <input type="radio" id="star4" name="rating" value="4">
+          <label class="rating_label" for="star4" title="4 estrelas"></label>
+
+          <input type="radio" id="star3" name="rating" value="3">
+          <label class="rating_label" for="star3" title="3 estrelas"></label>
+
+          <input type="radio" id="star2" name="rating" value="2">
+          <label class="rating_label" for="star2" title="2 estrelas"></label>
+
+          <input type="radio" id="star1" name="rating" value="1">
+          <label class="rating_label" for="star1" title="1 estrela"></label>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Integrantes: Beatriz Caires, Giovana Rodrigues dos Santos e Larissa de Almeida- Universidade Católica de Brasília(UCB)</p>
+  </footer>
+</body>
+</html>

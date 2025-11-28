@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Delivery - Cozinha Caseira da Lala</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location='index.html'">
+      <img src="img/ChatGPT Image 11 de nov. de 2025, 12_51_41.png" alt="Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="delivery.html">Delivery</a>
+      <a href="quem-somos.html">Quem Somos</a>
+      <a href="fale-conosco.html">Fale Conosco</a>
+    </nav>
+  </header>
+  
+  
+  <main class="pagina_pedidos">
+    <section class="pedido-container">
+      <h1 class="titulo-form">Faça seu Pedido</h1>
+
+     
+      <form id="pedidoForm">
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome completo" required /> 
+       
+        <label for="telefone">Telefone/Celular:</label>
+        <input type="text" id="Telefone" placeholder="Digite seu número" required /> 
+       
+
+        <label for="endereco">Endereço de Entrega:</label>
+        <input type="text" id="Endereço" placeholder="Rua, número, bairro, cidade" required /> 
+
+        <label for="pedido">Seu Pedido:</label>
+        <input type="text" id="Pedido" placeholder="Descreva seu pedido" required /> 
+       
+         
+        <button class="button_pedido" type="submit">📱 ENVIAR PEDIDO VIA WHATSAPP</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("pedidoForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const nome = document.getElementById("nome").value;
+      const endereco = document.getElementById("endereco").value;
+      const pedido = document.getElementById("pedido").value;
+
+      const mensagem = `Olá! Meu nome é ${nome}.%0AEndereço: ${endereco}.%0A%0APedido:%0A${pedido}`;
+      const telefone = "5599999999999"; // coloque o número do WhatsApp aqui (com DDI e DDD)
+      window.open(`https://wa.me/${telefone}?text=${mensagem}`, "_blank");
+    });
+  </script>
+</body>
+</html>
+
+    
+  </main>
+
+  <footer>
+    <p>Integrantes: Beatriz Caires, Giovana Rodrigues dos Santos e Larissa de Almeida- Universidade Católica de Brasília(UCB)</p>
+  </footer>
+</body>
+</html>
